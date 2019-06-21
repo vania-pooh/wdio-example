@@ -1,7 +1,7 @@
 exports.config = {
     runner: 'local',
     //protocol: 'https',
-    hostname: 'selenium.example.com', // Host
+    hostname: 'localhost', // Host
     //port: 4444, //Port
     user: '', // Username
     key: '', // Password
@@ -10,7 +10,7 @@ exports.config = {
     ],
     maxInstances: 1,
     capabilities: [
-      {browserName: 'firefox', 'selenoid:options': {enableVNC: true, enableVideo: true}}
+      {browserName: 'chrome', 'selenoid:options': {enableVNC: true, enableVideo: true}}
     ],
     logLevel: 'info',
     framework: 'mocha',
@@ -19,4 +19,4 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     }
-}
+};
